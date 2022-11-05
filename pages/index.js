@@ -881,14 +881,6 @@ export default function App() {
         <Typography id="main-title" sx={{ m: 2 }} variant="h4">Shizuku Launcher - AWS开机小助手</Typography>
       </div>
       <div>
-        <Stack sx={{ m: 2 }} spacing={2} direction="row">
-          <Link underline="hover" variant="body2" href="https://github.com/hiDandelion/shizuku-launcher-next">访问项目仓库</Link>
-        </Stack>
-      </div>
-      <div>
-        <Image src="/title-shizuku.webp" alt="title-shizuku" width={256} height={256} />
-      </div>
-      <div>
         <FormControl sx={{ m: 1, width: 0.9, maxWidth: 600 }} variant="standard">
           <TextField label="Access Key ID" variant="outlined" size="small" onChange={(e) => {
             setAki(e.target.value);
@@ -1177,6 +1169,15 @@ export default function App() {
             <Button sx={{ m: 1 }} variant="contained" size="small" onClick={() => {
               checkInstances(false);
             }}>查看EC2</Button>
+          </FormControl>
+        </div>
+      )}
+      {isCheckingInstances ? (<CircularProgress sx={{ m: 1 }} />) : (
+        <div>
+          <FormControl>
+            <Button sx={{ m: 1 }} variant="contained" size="small" onClick={() => {
+              checkLS(false);
+            }}>查看LightSail</Button>
           </FormControl>
         </div>
       )}
