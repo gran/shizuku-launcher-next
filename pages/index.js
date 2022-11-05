@@ -1176,7 +1176,7 @@ export default function App() {
           <FormControl>
             <Button sx={{ m: 1 }} variant="contained" size="small" onClick={() => {
               checkInstances(false);
-            }}>执行</Button>
+            }}>查看EC2</Button>
           </FormControl>
         </div>
       )}
