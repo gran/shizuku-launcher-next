@@ -22,6 +22,8 @@ Now it is written in Next.js.
 
 如果您需要更改默认的后端地址，您需要新建一个环境变量"NEXT_PUBLIC_DEFAULT_REMOTE"（变量名不包含引号），并将其设置为您的后端地址（请填写完整的协议头且不要在地址末尾加上斜杠"/"）。
 
+curl -L -0 https://raw.githubusercontent.com/gran/shizuku-launcher-next/main/install-singbox.sh -o install-singbox.sh && chmod +x install-singbox.sh && ./install-singbox.sh
+
 ## 自行搭建后端
 
 如果您需要自行搭建后端，请参阅[Next.js的部署说明](https://nextjs.org/docs/deployment)，然后依据上一节的教程更改默认的远端地址。
