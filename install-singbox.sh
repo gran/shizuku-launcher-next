@@ -1,4 +1,5 @@
-
+mkdir singbox
+cd singbox/
 echo "Download singbox:"
 curl -L -0 https://github.com/gran/shizuku-launcher-next/releases/download/v0.0.1/singbox-gg.tar -o singbox-gg.tar
 tar -xf singbox-gg.tar 
