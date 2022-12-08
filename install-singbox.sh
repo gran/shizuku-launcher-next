@@ -4,6 +4,7 @@ echo "Download singbox:"
 curl -L -0 https://github.com/gran/shizuku-launcher-next/releases/download/v0.0.1/singbox-gg.tar -o singbox-gg.tar
 tar -xf singbox-gg.tar 
 
+cd ~/singbox/singbox-gg
 echo "Singbox setup:"
 mv sing-box /usr/bin/singbox
 chmod -R 777 /usr/bin/singbox
